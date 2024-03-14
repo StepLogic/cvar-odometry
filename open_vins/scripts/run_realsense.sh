@@ -1,0 +1,1 @@
+ros2 launch realsense2_camera rs_launch.py enable_infra1:=true enable_infra2:=true enable_depth:=true enable_accel:=true enable_gyro:=true  unite_imu_method:=2 enable_sync:=true rgb_camera.profile:=1280x800x30 depth_camera.profile:=1280x800x30 align_depth.enable:=true
