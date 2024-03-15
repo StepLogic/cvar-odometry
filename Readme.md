@@ -56,10 +56,10 @@ Normally this should build openvins but I have not had this luck.
 The various packages depend on each other ,hence build and install them individually then run `colcon build`
 <p style="color:red">The order is important</p>
 
-- `cd /catkin_ws/src/open_vins/ov_init && rm -rf build && cmake --build build && make install`
-- `cd /catkin_ws/src/open_vins/ov_core && rm -rf build && cmake --build build && make install`
-- `cd /catkin_ws/src/open_vins/ov_eval && rm -rf build && cmake --build build && make install`
-- `cd /catkin_ws/src/open_vins/ov_msckf && rm -rf build && cmake --build build && make install`
+- `cd /catkin_ws/src/open_vins/ov_init && rm -rf build && cmake -B build && cd build && make install`
+- `cd /catkin_ws/src/open_vins/ov_core && rm -rf build && cmake -B build && cd build && make install`
+- `cd /catkin_ws/src/open_vins/ov_eval && rm -rf build && cmake -B build && cd build && make install`
+- `cd /catkin_ws/src/open_vins/ov_msckf && rm -rf build && cmake -B build && cd build && make install`
 - `cd /catkin_ws && colcon build`
 
 <p style="color:green">It should be successfully now</p>
